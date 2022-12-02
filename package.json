@@ -1,7 +1,7 @@
 {
   "name": "the-note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "This application helps with making, saving and deleting notes",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,13 +11,14 @@
     "url": "git+https://github.com/aldoibuado/The-Note-Taker.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aldo Ibuado",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aldoibuado/The-Note-Taker/issues"
   },
   "homepage": "https://github.com/aldoibuado/The-Note-Taker#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
   }
 }
