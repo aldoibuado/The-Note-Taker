@@ -28,6 +28,13 @@ class Notes {
     const newNote = {title, text, id:++ this.idDum}
     return this.getNotes().then(notes => [...notes, newNote]).then(updateNotes => this.write(updateNotes)).then(() => newNote)
   }
+  // bonus to delete notes
+  deleteNotes(idDum) {
+    return this.getNotes()
+    .then(notes => notes.filter(note => note.idDum !== idDum))
+    .then(filteredNotes => this.write(filteredNotes));
+  }
 }
+
 
 module.exports = new Notes();
