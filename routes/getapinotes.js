@@ -19,7 +19,7 @@ router.post("/notes", function (req, res) {
 // bonus delete api notes
 router.delete("/notes/:id", (req, res) => {
   notes
-    .deleteNotes(req.params.idDum)
+    .deleteNotes(req.params.id)
     .then(() => res.json({ ok: true }))
     .catch((err) => res.status(500).json(err));
 });

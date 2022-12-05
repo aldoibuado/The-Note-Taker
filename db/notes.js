@@ -23,18 +23,23 @@ class Notes {
       return notesArray;
     });
   }
-  addNotes(note){
-    const {title, text} = note
-    const newNote = {title, text, id:++ this.idDum}
-    return this.getNotes().then(notes => [...notes, newNote]).then(updateNotes => this.write(updateNotes)).then(() => newNote)
+  addNotes(note) {
+    const { title, text } = note;
+    const newNote = { title, text, id: ++this.idDum };
+    return this.getNotes()
+      .then((notes) => [...notes, newNote])
+      .then((updateNotes) => this.write(updateNotes))
+      .then(() => newNote);
   }
   // bonus to delete notes
   deleteNotes(idDum) {
+    console.log(idDum);
     return this.getNotes()
-    .then(notes => notes.filter(note => note.idDum !== idDum))
-    .then(filteredNotes => this.write(filteredNotes));
+      .then((notes) => notes.filter((note) => note.id != idDum))
+      .then((filteredNotes) => { this.write(filteredNotes)
+      console.log(filteredNotes);
+      });
   }
 }
-
 
 module.exports = new Notes();
