@@ -25,6 +25,7 @@
 
   ## Usage
   The user is able to write a note and then click on the save icon to save the note. If the user wants to write a new note, they can click on the add button to create a new note. Their is also an option for the user to delete a note by clicking the trashcan button.
+  Here is also the link https://rocky-castle-10172.herokuapp.com/ to the application deployed to Heroku!
 
   ![Screenshot (29)](https://user-images.githubusercontent.com/109316738/205528712-2e40181e-9805-4426-94de-a2df3eb917ec.png)
 
