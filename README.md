@@ -36,7 +36,7 @@
   None for this project.
 
   ## Tests
-  Trial and error. Inputting node server.js and clicking on https://localhost:3000 would lead to the webpage before it was deployed on heroku. It gave me the opportunity to test the code to see what was working and what was not.
+  Trial and error. Inputting node server.js and clicking on http://localhost:3000 would lead to the webpage before it was deployed on heroku. It gave me the opportunity to test the code to see what was working and what was not.
 
   ## Questions
   How do you deploy an applicaiton on heroku?
